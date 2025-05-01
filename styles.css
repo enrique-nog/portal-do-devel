@@ -1,0 +1,139 @@
+/* Resetando margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Corpo da página */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  /* Estilização do título */
+  h1 {
+    text-align: center;
+    background-color: #808080; /* fundo cinza */
+    color: white;
+    padding: 20px;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilização do header */
+  header {
+    background-color: #808080; /* fundo cinza */
+    padding: 10px 0;
+  }
+  
+  /* Estilização da div do menu */
+  .menu {
+    background-color: #d3d3d3; /* fundo cinza-claro */
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Estilização da lista do menu */
+  ul {
+    list-style-type: none;
+  }
+  
+  ul li {
+    display: inline-block;
+    margin: 0 15px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.2rem;
+  }
+  
+  /* Estilização do rodapé */
+  footer {
+    background-color: #808080; /* fundo cinza */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 40px;
+  }
+  
+  /* Hover no menu */
+  ul li:hover {
+    background-color: #a9a9a9; /* muda para cinza mais escuro ao passar o mouse */
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Estilização do main e artigos */
+  main {
+    margin: 20px;
+  }
+  
+  section.content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Definindo 2 colunas fixas */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  article {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 15px;
+    text-align: center;
+    transition: opacity 0.3s ease; /* Adicionando transição suave de opacidade */
+  }
+  
+  /* Efeito de mudança de opacidade ao passar o mouse sobre o artigo */
+  article:hover {
+    opacity: 0.8; /* Leve diminuição na opacidade */
+  }
+  
+  article h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  article p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  /* Estilização do figure e imagem */
+  figure {
+    margin: 0;
+    padding: 0;
+  }
+  
+  figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  /* Estilização do rodapé em dispositivos móveis */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 2rem;
+    }
+    ul li {
+      font-size: 1rem;
+      padding: 8px 15px;
+    }
+  
+    article h2 {
+      font-size: 1.5rem;
+    }
+  
+    article p {
+      font-size: 0.9rem;
+    }
+  
+    section.content {
+      grid-template-columns: 1fr; /* Muda para uma coluna em telas pequenas */
+    }
+  }
+  
